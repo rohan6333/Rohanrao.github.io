@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle-button">Dark Theme</button>
+
+    <!-- Blog Post 1 Content -->
+    <article class="blog-post" data-blog-id="1">
+        <h3>PalWorld Unleashed</h3>
+        <p>"PalWorld Unleashed: Exploring the Next Frontier in Gaming"
+
+            Description: Step into the vibrant and captivating world of PalWorld, where gaming meets adventure in an unparalleled experience. In this immersive blog, we delve deep into the exciting realm of PalWorld, a revolutionary fusion of gaming, creature collecting, and survival. Join us as we embark on a journey through lush landscapes, encountering an array of charming creatures known as Pals, each with unique abilities and personalities. From thrilling battles to heartwarming interactions, PalWorld offers an unmatched gaming experience that captivates players of all ages. Get ready to explore, discover, and forge unforgettable bonds with your Pals as we unravel the mysteries of this enchanting universe. Welcome to PalWorld Unleashed, where the possibilities are endless and the adventure never ends.</p>
+        <div class="interaction-buttons">
+            <button class="like-button" data-blog-id="1">Like <span class="like-count">0</span></button>
+            <button class="comment-button" data-blog-id="1">Comment</button>
+        </div>
+        <div class="comments-section" data-blog-id="1">
+            <input type="text" class="comment-input" data-blog-id="1" placeholder="Add a comment...">
+            <ul class="comment-list"></ul>
+        </div>
+        <a href="index.html" class="back-button">Back</a>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Update current year in footer
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        // Theme toggle functionality
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            document.body.classList.toggle("light-theme");
+            document.body.classList.toggle("dark-theme");
+            const currentTheme = document.body.classList.contains("light-theme") ? "Light Theme" : "Dark Theme";
+            document.getElementById("theme-toggle").textContent = currentTheme;
+        });
+    </script>
+</body>
+</html>

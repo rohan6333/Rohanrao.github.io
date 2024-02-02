@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body class="light-theme">
+    <!-- Animated Background -->
+    <div class="animated-background"></div>
+
+    <!-- Theme Toggle Button -->
+    <div id="theme-toggle-container" class="theme-toggle-container">
+        <button id="theme-toggle" class="theme-toggle-button">Dark Theme</button>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My World</h1>
+            <p>Discover my journey, skills, and passions!</p>
+            <a href="#about" class="hero-button">Explore</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="profile_Pic.jpg" alt="Your Profile Image" class="profile-img">
+        <div class="text-content">
+            <h2>About Me</h2><br>
+            <p>I'm a passionate web developer with 5 years of experience. My journey in the world of web development has been exciting and filled with learning opportunities.</p><br>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="text-content">
+            <h2>Education</h2><br>
+            <p>As a committed Computer Science undergrad at IIIT-Hyderabad, I bring a blend of academic rigor and practical tech savvy
+                to the table. My journey began with a sterling performance in the JEE Mains, securing a rank in the top 1%, a testament to my analytical prowess and problem-solving skills.My hands-on project experience is diverse, ranging from crafting an Android app for Cancer Care India, enabling doctors
+and patients to effectively track health data, to pioneering a terminal-based 'Clash of Clans' game ???? without reliance on
+standard libraries. These initiatives highlight my adeptness in programming languages such as C, C++, and Python and my
+versatility with frameworks like Flutter, React, Angular, and DART. <br> <br> My hands-on project experience is diverse, ranging from crafting an Android app for Cancer Care India, enabling doctors
+                and patients to effectively track health data, to pioneering a terminal-based 'Clash of Clans' game ???? without reliance on
+                standard libraries. These initiatives highlight my adeptness in programming languages such as C, C++, and Python and my
+                versatility with frameworks like Flutter, React, Angular, and DART.</p><br>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <div class="text-content">
+            <h2>Achievements</h2><br>
+            <p>Achieved an All India Rank of 654 in JEE Mains <br>
+                Decor Club Coordinator at IIIT Hyderabad (IIITH)<br>
+                IIITH National Service Scheme (NSS) Coordinator<br>
+                Coordinator for The Gaming Club at IIITH<br>
+                Design Lead for Felicity (IIITH Fest)<br>
+                Sunburn Campus Ambassador<br>
+                Active involvement in Photography and Videography<br>
+                Marketing Team Member at Wink Entertainments</p><br><br>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="text-content">
+            <h2>Skills</h2><br>
+            <p>My skill set includes proficiency in HTML, CSS, JavaScript, and various frontend and backend frameworks. I'm also adept at problem-solving and teamwork.</p><br>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="flex-container animated-section">
+        <h2>Insights & Stories</h2>
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <article class="blog-post" data-blog-id="1">
+                <h3>Rise of the Titans</h3>
+                <p>Rise of the Titans: The Ultimate Showdown in eSports Gaming</p><br>
+                <div class="interaction-buttons">
+                    <button class="like-button" data-blog-id="1">Like <span class="like-count">0</span></button>
+                    <button class="comment-button" data-blog-id="1">Comment</button>
+                </div>
+                <div class="comments-section" data-blog-id="1">
+                    <input type="text" class="comment-input" data-blog-id="1" placeholder="Add a comment...">
+                    <ul class="comment-list"></ul>
+                </div>
+                <a href="blog1.html" target="_blank" class="read-more">Read More</a><br>
+            </article>
+            <!-- Blog Post 2 -->
+            <article class="blog-post" data-blog-id="2"><br> 
+                <h3>PalWorld Unleashed </h3> 
+                <p>Exploring the Next Frontier in Gaming</p><br>
+                <div class="interaction-buttons">
+                    <button class="like-button" data-blog-id="2">Like <span class="like-count">0</span></button>
+                    <button class="comment-button" data-blog-id="2">Comment</button>
+                </div>
+                <div class="comments-section" data-blog-id="2">
+                    <input type="text" class="comment-input" data-blog-id="2" placeholder="Add a comment...">
+                    <ul class="comment-list"></ul>
+                </div>
+                <a href="blog2.html" target="_blank" class="read-more">Read More</a>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's get in touch! You can reach me at:</p>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Social Links -->
+    <section id="socials">
+        <h2>Connect with Me</h2>
+        <div class="icon-container">
+            <a href="https://github.com/rohan6333" target="_blank" class="social-icon github-icon"></a>
+            <a href="https://www.linkedin.com/in/rohan-rao-6b1ab0247/" target="_blank" class="social-icon linkedin-icon"></a>
+            <a href="https://twitter.com/Rohan6333" target="_blank" class="social-icon twitter-icon"></a>
+            <a href="raorohan209@gmail.com" class="social-icon email-icon"></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Rohan. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Update current year in footer
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        // Theme toggle functionality
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            document.body.classList.toggle("light-theme");
+            document.body.classList.toggle("dark-theme");
+            const currentTheme = document.body.classList.contains("light-theme") ? "Light Theme" : "Dark Theme";
+            document.getElementById("theme-toggle").textContent = currentTheme;
+
+            // Change text color for blog posts when toggling theme
+            document.querySelectorAll('.blog-post').forEach(post => {
+                post.style.color = document.body.classList.contains("light-theme") ? "#333" : "#fff";
+            });
+        });
+    </script>
+</body>
+</html>
